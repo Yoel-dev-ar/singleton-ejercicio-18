@@ -27,6 +27,7 @@ Los movimientos registrados no deben poder editarse ni eliminarse desde el códi
 El saldo inicial de cada insumo debe incorporarse mediante un movimiento de entrada.
 
 Explicación lógica
+
 Atributos: En RegistroMovimientosInsumos se declaran movimientos (private final List<MovimientoInsumo>) para guardar la secuencia inmutable de operaciones y instancia (private static RegistroMovimientosInsumos) para unificar los sectores.
 
 Instancia única: El constructor private impide instanciar registros independientes y getInstancia() garantiza que depósito, consultorios y laboratorio trabajen sobre la misma colección.
